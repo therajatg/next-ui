@@ -7,7 +7,6 @@ import Link from "next/link";
 import { navItems } from "./constants";
 import { useState } from "react";
 import { Menu } from "lucide-react";
-import { Label } from "../ui/label";
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
