@@ -6,6 +6,7 @@ export const HomeAvatars = () => (
     <div className="flex flex-shrink-0 -space-x-1">
       {avatars.map(({ src, alt }) => (
         <Image
+          key={alt}
           className="h-6 w-6 max-w-none rounded-full ring-2 ring-white"
           src={src}
           alt={alt}

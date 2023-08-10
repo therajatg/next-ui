@@ -49,13 +49,16 @@ export function HomeHero() {
           </p>
           <div className="hidden lg:flex gap-x-8 bg-stone-200 rounded-lg py-1 px-2 font-medium">
             {features.map(({ name, status }) => (
-              <span className={`${status && "bg-white rounded-md px-1"}`}>
+              <span
+                key={name}
+                className={`${status && "bg-white rounded-md px-1"}`}
+              >
                 {name}
               </span>
             ))}
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row lg:justify-between items-center gap-y-16">
+        <div className="flex flex-col lg:flex-row lg:justify-between items-center gap-y-16 gap-x-28">
           <div className="flex flex-col gap-y-6 basis-1/2 lg:items-start items-center max-w-2xl lg:max-w-none">
             <h2 className="font-black text-5xl text-center lg:text-left">
               Built in user authentication system
@@ -72,9 +75,7 @@ export function HomeHero() {
               See Documentation
             </button>
           </div>
-          <div className="basis-1/2 lg:flex justify-center items-center">
-            <div className="h-80 w-80 bg-stone-100 rounded-xl"></div>
-          </div>
+          <div className="lg:basis-1/2 h-[25rem] w-full bg-stone-100 rounded-xl"></div>
         </div>
       </div>
     </div>
