@@ -15,15 +15,18 @@ export function HomeFeatureList() {
               you need.
             </p>
             <div className="hidden lg:flex gap-x-8 bg-stone-200 rounded-lg py-1 px-2 font-medium">
-              {cardFeatures.map(({ name, description, subscriptionType }) => (
-                <span
-                  className={`${
-                    subscriptionType && "bg-white rounded-md px-1"
-                  }`}
-                >
-                  {name}
-                </span>
-              ))}
+              {cardFeatures.map(
+                ({ name, description, subscriptionType }, index) => (
+                  <span
+                    key={index}
+                    className={`${
+                      subscriptionType && "bg-white rounded-md px-1"
+                    }`}
+                  >
+                    {name}
+                  </span>
+                )
+              )}
             </div>
           </div>
         </div>
