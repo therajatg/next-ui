@@ -19,7 +19,7 @@ export function Navbar() {
         <Link
           href={"/"}
           className="font-bold"
-          onClick={() => setMobileMenuOpen((prev) => !prev)}
+          // onClick={() => setMobileMenuOpen((prev) => !prev)}
         >
           Nextbase
         </Link>
@@ -41,7 +41,7 @@ export function Navbar() {
           className="hover:cursor-pointer lg:hidden"
         />
       </div>
-      {mobileMenuOpen && <hr className="mt-4" />}
+      <hr className="mt-4" />
       {mobileMenuOpen && (
         <ul className="lg:hidden w-full shadow-2xl flex flex-col items-center font-medium pb-2">
           {navItems.map(({ name, href }) => (
@@ -58,5 +58,3 @@ export function Navbar() {
     </nav>
   );
 }
-
-// hidden absolute xl:flex items-center space-x-2 right-60
