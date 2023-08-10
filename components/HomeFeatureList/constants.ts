@@ -1,4 +1,4 @@
-const cardFeatures = [
+export const cardFeatures = [
   {
     name: "User Settings",
     description:

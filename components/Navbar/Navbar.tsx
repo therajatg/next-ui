@@ -15,11 +15,7 @@ export function Navbar() {
       <div
         className={`flex items-center justify-between mt-4 mx-2 md:mx-4 lg:mx-24`}
       >
-        <Link
-          href={"/"}
-          className="font-bold"
-          // onClick={() => setMobileMenuOpen((prev) => !prev)}
-        >
+        <Link href={"/"} className="font-bold">
           Nextbase
         </Link>
         <ul className="hidden lg:flex gap-8 font-medium items-center">

@@ -1,3 +1,7 @@
-export function HomeFeatureCard() {
-  return <div>HomeFeatureCard</div>;
+interface HomeFeatureCardProps {}
+
+function HomeFeatureCard() {
+  return <div></div>;
 }
+
+export default HomeFeatureCard;
