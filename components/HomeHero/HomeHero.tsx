@@ -8,7 +8,7 @@ import { features } from "./constants";
 
 export function HomeHero() {
   return (
-    <div className="mx-2 md:mx-4 lg:mx-24 flex flex-col gap-y-24 items-center justify-center">
+    <div className="mx-2 md:mx-4 lg:mx-24 flex flex-col gap-y-24 items-center justify-center pb-16">
       <div className="flex flex-col items-center gap-y-6 max-w-2xl">
         <h1 className="font-black text-7xl text-center">
           Build your SAAS in record time.
